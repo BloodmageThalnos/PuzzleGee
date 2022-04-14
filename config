@@ -1,0 +1,33 @@
+# List of constraints that is part of clues in the result puzzle.
+[constraint]
+thermo 2,4 2,5 3,6 4,6
+thermo 5,6 6,5 6,4 6,3
+thermo 5,2 4,2 3,2 2,3
+
+# List of hidden constraints that is not given as a clue, but also restricting the randomly puzzle.
+# These are often added to make the puzzle more interesting / harder.
+[hidden]
+given 2,4 2
+given 4,6 5
+given 5,6 2
+given 3,2 5
+
+# List of possible givens which are constraints to be added to the final puzzle.
+# Index starts from 1
+[possible_given]
+1-2 1-9
+8-9 1-9
+2-8 1-2
+2-8 8-9
+
+[output]
+./puzzles
+
+[prefix]
+9x9_recycle
+
+[num_workers]
+8
+
+[min_given_count]
+20
